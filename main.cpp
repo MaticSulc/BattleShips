@@ -2,8 +2,6 @@
 #include<time.h>
 #include<stdlib.h>
 #include<math.h>
-//todo:
-//vs AI(rand. generator)
 
 
 using namespace std;
@@ -15,7 +13,7 @@ void printGrid(int grid[5][5]){
                 if(grid[i][j] == 1 || grid[i][j] == 0)
                     cout<<grid[i][j]<<" ";
                 else
-                    cout<<char(grid[i][j])<<" ";
+                    cout<<char(grid[i][j])<<" "; //za izpis kvadratkov, X...
         }
         cout<<endl;
     }
@@ -26,9 +24,9 @@ void printGridInGame(int grid[5][5]){
     for(int i=0;i<5;i++){
         for(int j=0;j<5;j++){
                 if(grid[i][j] == 1 || grid[i][j] == 0)
-                    cout<<"?"<<" ";
+                    cout<<"?"<<" "; //neznano polje v procesu igre ce je voda ali ladja
                 else
-                    cout<<char(grid[i][j])<<" ";
+                    cout<<char(grid[i][j])<<" "; //izpise polja ki smo jih ze poskusili/zadeli 
         }
         cout<<endl;
     }
@@ -82,7 +80,7 @@ grid[rand_x][rand_y] = 1;
 
 int checkShip(int a,int b,int grid[5][5]){
 
-if(grid[a][b] == 1)
+if(grid[a][b] == 1) //bi lahko blo boljse ampak deluje
     return 1;
 else
     return 0;
