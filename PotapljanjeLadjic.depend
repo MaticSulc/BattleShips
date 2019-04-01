@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1553594923 source:e:\Šola\3. letnik\pro\potapljanjeladjic\main.cpp
+	<iostream>
+
+1554146498 source:h:\Šola\3. letnik\pro\potapljanjeladjic\main.cpp
+	<iostream>
+	<time.h>
+	<stdlib.h>
+	<math.h>
+
